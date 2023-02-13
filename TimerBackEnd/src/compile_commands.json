@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/hello/TimerBackEnd/build",
+  "command": "/usr/local/bin/clang++ -I/usr/local/boost_1_81_0 -o CMakeFiles/main.dir/main.cpp.o -c /home/hello/TimerBackEnd/src/main.cpp",
+  "file": "/home/hello/TimerBackEnd/src/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.o"
+}
+]

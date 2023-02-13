@@ -1,0 +1,3 @@
+/home/hello/TimerBackEnd/build/CMakeFiles/main.dir
+/home/hello/TimerBackEnd/build/CMakeFiles/edit_cache.dir
+/home/hello/TimerBackEnd/build/CMakeFiles/rebuild_cache.dir
