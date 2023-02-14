@@ -1,2 +1,0 @@
-- [ ] material web ui design rule
-- [ ] terminal multiplexer. like: tmux
