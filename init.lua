@@ -15,9 +15,9 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 require('lualine').setup()
 
 o.number = true
-o.tabstop = 4
+o.tabstop = 2
 o.softtabstop = 0
-o.shiftwidth = 4
+o.shiftwidth = 2
 o.expandtab = true
 o.smartindent = true
 o.swapfile = false
