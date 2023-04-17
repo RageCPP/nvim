@@ -29,5 +29,6 @@ vim.keymap.set('n', ';b', builtin.buffers)
 vim.keymap.set('n', ';h', builtin.help_tags)
 vim.keymap.set('n', ';r', builtin.resume) -- 恢复上次打开telescope的状态
 
-voim.keymap.set('n', ';n', function() builtin.diagnostics({bufnr = 0}) end) -- 列出所有打开的缓冲区或特定缓冲区的诊断。使用bufnr=0当前缓冲区的选项。
-vim.keymap.set('n', ';d', function() builtin.lsp_definitions({jumptype = "never"}) end)
+vim.keymap.set('n', '<C-n>', function() builtin.diagnostics({bufnr = 0}) end) -- 列出所有打开的缓冲区或特定缓冲区的诊断。使用bufnr=0当前缓冲区的选项。
+vim.keymap.set('n', '<C-d>', function() builtin.lsp_definitions({jumptype = "never"}) end)
+vim.keymap.set('n', '<C-t>', function() builtin.lsp_type_definitions({jumptype = "never"}) end)
