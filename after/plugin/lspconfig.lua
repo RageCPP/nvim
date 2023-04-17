@@ -13,11 +13,32 @@ local servers = { 'clangd', 'cmake', 'lua_ls', "rust_analyzer", "tsserver" }
 end
 
 -- clangd
+-- lspconfig.clangd.setup {
+--   init_options = {
+--     fallbackFlags = { "-x", "c" }, -- 设置只用c的标准，不是cpp或者object c的标准一起用
+--   },
+--   filetypes = { "c", "h"},
+--   cmd = {
+--     "clangd",
+--     "--enable-config",
+--     "--suggest-missing-includes",
+--     "--background-index", -- 后台建立索引，并持久化到disk
+--     "--clang-tidy", -- 开启clang-tidy
+--     "--clang-tidy-checks=performance-*,bugprone-*",
+--     "--completion-style=detailed",
+--     "--cross-file-rename=true",
+--     "--header-insertion=iwyu",
+--     "--pch-storage=memory",
+--     "--function-arg-placeholders=false",
+--     "--ranking-model=decision_forest",
+--     "--header-insertion-decorators",
+--     "--pretty",
+--     "--all-scopes-completion",
+--   },
+-- }
+
 lspconfig.clangd.setup {
-  init_options = {
-    fallbackFlags = { "-x", "c" },
-  },
-  filetypes = { "c", "h", "cpp", "objc", "objcpp", "cuda", "proto", "hpp" },
+  filetypes = { "cpp", "objc", "objcpp", "cuda", "proto", "hpp" },
   cmd = {
     "clangd",
     "--enable-config",
