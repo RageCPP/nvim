@@ -29,6 +29,7 @@ end
 -- abc  => 1. abc/a O 2. a/b/c O 3. c/abc/a O
 -- 'abc => 1. abc/a O 2. a/b/c X 3. c/abc/a O
 -- abc$ => 1. abc/a X 2. a/b/c X 3. c/abc O
+-- 'abc cpp$ => 1. abc/a.cpp O 2. abc/b.jpg X
 vim.keymap.set('n', ';f', function() builtin.find_files({no_ignore = false,hidden = true}) end)
 
 vim.keymap.set('n', ';s', builtin.live_grep) -- 在您当前的工作目录中搜索一个字符串，并在您键入时实时获得结果，忽略.gitignore
