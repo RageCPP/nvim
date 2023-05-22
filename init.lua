@@ -7,6 +7,7 @@ local cmd = vim.cmd
 g.colors_name = "kanagawa"
 g.background = "dark"
 o.number = true
+o.relativenumber = true
 o.tabstop = 2
 o.softtabstop = 0
 o.shiftwidth = 2

@@ -10,7 +10,7 @@ tree.setup {
     "go",             "html",         "jsdoc",
     "json",           "python",       "sql",
     "regex",          "ini",          "bash",
-    "astro"
+    "astro",          "yaml"
   },
   sync_install = true,
   -- set to false if you don't have `tree-sitter` CLI installed locally. 
