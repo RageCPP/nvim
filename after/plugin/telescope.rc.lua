@@ -40,3 +40,10 @@ vim.keymap.set('n', ';r', builtin.resume) -- 恢复上次打开telescope的状�
 vim.keymap.set('n', '<C-n>', function() builtin.diagnostics({bufnr = 0}) end) -- 列出所有打开的缓冲区或特定缓冲区的诊断。使用bufnr=0当前缓冲区的选项。
 vim.keymap.set('n', '<C-d>', function() builtin.lsp_definitions({jumptype = "never"}) end)
 vim.keymap.set('n', '<C-t>', function() builtin.lsp_type_definitions({jumptype = "never"}) end)
+vim.keymap.set('n', '<C-i>', function() builtin.lsp_implementations({jumptype = "never"}) end)
+vim.keymap.set('n', '<C-l>', function() builtin.lsp_references({jumptype = "never"}) end)
+
+-- 滚动预览
+-- c-u 向上 c-d 向下 c-f 向左 c-k 向右
+
+-- c-q 将Result发送到quickfixlist方便复制

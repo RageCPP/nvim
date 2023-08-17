@@ -13,7 +13,7 @@ lsp_defaults.capabilities = vim.tbl_deep_extend(
 )
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local open_servers = { 'clangd', 'cmake', 'lua_ls', "rust_analyzer", "tsserver" }
+local open_servers = { 'clangd', 'cmake', 'lua_ls', "rust_analyzer", "tsserver", "bashls" }
 
 for _, lsp in ipairs(open_servers) do
   lspconfig[lsp].setup({})
